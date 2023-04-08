@@ -1,0 +1,196 @@
+@font-face {
+  font-family: Kanit-Italic;
+  src: url('Kanit/Kanit-Italic.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: Kanit-Bold;
+  src: url('Kanit/Kanit-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: Kanit-Medium;
+  src: url('Kanit/Kanit-Medium.ttf') format("truetype");
+}
+
+.btn-navbar:hover{
+    transform: translate(-5, 0);
+  
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+ position: relative;
+ width: 100%;
+ background-color: #f8dff2;
+ color: #424b54;
+ font-size: 16px;
+ padding: 0 0 140px 0;
+ display: flex;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ padding: 0;
+ margin: 0;
+ flex-direction: column;
+ min-height: 100vh;
+ min-width: 100vw;
+ overflow-x: hidden;
+
+
+}
+  .form-container {
+    font-family: Kanit-Medium, sans-serif;
+    background-color: #3d235a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  }
+  .form-control {
+    background-color: #470083;
+    color: #fff;
+    border-color: #7721bf;
+  }
+  label {
+    color: #fff;
+  }
+  .btn {
+    background-color: #7721bf;
+    border-color: #7721bf;
+    transition: .5s ease-in-out;
+  }
+  .btn:hover {
+    background-color: #470083;
+    border-color: #470083;
+  }
+  .btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(119, 33, 191, 0.5);
+  }
+  .form-check-input:checked {
+    background-color: #7721bf;
+    border-color: #7721bf;
+  }
+  p{
+    font-family: Kanit-Medium, sans-serif;
+  }
+
+  .about-us {
+    background-color: #7721bf;
+    color: #fff;
+  }
+  
+  .about-us h2 {
+    font-size: 3rem;
+  }
+  
+  .about-us p {
+    font-size: 1.2rem;
+  }
+  
+  .about-us button {
+    font-size: 1.2rem;
+  }  
+nav{
+  font-family: Kanit-Bold;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#about-us-logo{
+  border: #f8dff2 solid 4px;
+}
+
+section{
+  font-family: Kanit-Medium;
+}
+
+section div h2 {
+  font-family: Kanit-Bold;
+  font-size: 4em;
+}
+.card {
+  transition: ease-in-out .2s;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+  
+}
+
+div div h2{
+  font-family: Kanit-Bold;
+  font-size: 3em;
+}
+
+.navbar{
+  background: #3d235a;
+  background: linear-gradient(34deg,#3d235a 10%, #832cd2 60%);
+  background: -webkit-linear-gradient(34deg,#3d235a 10%, #832cd2 60%);
+  background: -moz-linear-gradient(34deg,#3d235a 10%, #832cd2 60%);
+}
+
+footer{
+  background: #3d235a;
+  background: linear-gradient(212deg,#3d235a 10%, #832cd2 60%);
+  background: -webkit-linear-gradient(212deg,#3d235a 10%, #832cd2 60%);
+  background: -moz-linear-gradient(212deg,#3d235a 10%, #832cd2 60%);
+}
+
+footer div div a img:hover{
+  transform: translate(3px, -5px);
+}
+
+/* Styles for client recommendation section */
+section.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+section .client{
+  transition: ease-in-out .2s;
+ 
+}
+
+section .client:hover{
+  transform: translate(3px, -5px);
+}
+
+section .client .bg-white{
+  border: 16px double #3d235a;
+ 
+}
+
+section.py-16 h2 {
+  margin-bottom: 4rem;
+}
+
+section.py-16 .bg-white {
+  background-color: #fff;
+}
+
+section.py-16 .bg-white img {
+  height: 300px;
+}
+
+section.py-16 h3 {
+  margin-bottom: 1rem;
+}
+
+section.py-16 p {
+  font-family: Kanit-Medium, sans-serif;
+  font-size: 1em;
+}
+
+hr{
+  margin: 1vw;
+  margin-left:0px;
+}
+
