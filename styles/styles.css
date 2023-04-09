@@ -194,3 +194,24 @@ hr{
   margin-left:0px;
 }
 
+#contact {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#contact.appear {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#big-logo{
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#big-logo.appear{
+  opacity: 1;
+  transform: translateX(0);
+}
