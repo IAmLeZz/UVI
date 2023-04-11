@@ -26,3 +26,5 @@ function handleWindowResize() {
 handleWindowResize();
 // Add event listener for the window resize event
 window.addEventListener("resize", handleWindowResize);
+
+

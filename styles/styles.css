@@ -105,6 +105,9 @@ p {
 
 nav {
   font-family: Kanit-Bold;
+  position: fixed !important;
+  min-width: 100%;
+  z-index: 999;
 }
 
 footer {
@@ -340,4 +343,82 @@ hr {
 #our-team .card:hover:after {
   transform: rotate(10deg);
   box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+}
+
+#services {
+  background-color: #f8f9fa;
+}
+
+.service-card {
+  border: none;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card .card-body {
+  padding: 2rem;
+}
+
+.service-card .card-title {
+  color: #770ef0;
+}
+
+.service-card .card-text {
+  color: #40464b;
+  text-align: left;
+}
+
+.service-card .btn-primary {
+  background-color: #7721bf;
+  border-color: #7721bf;
+}
+
+.service-card .btn-primary:hover {
+  background-color: #bd72fd;
+  border-color: #bd72fd;
+}
+
+.services .card {
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  min-height: 200px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+
+.services .card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+
+@media (max-width: 1600px) {
+  .services .cards {
+    justify-content: center;
+  }
+}
+
+.idle-animation {
+  margin-left: auto;
+  margin-right: 30px;
+  max-width: 200px;
+  opacity: 0.6;
+  animation: idle 2s ease-in-out infinite alternate;
+}
+
+@keyframes idle {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
 }
