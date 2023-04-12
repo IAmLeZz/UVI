@@ -23,6 +23,8 @@ function handleWindowResize() {
   }
 }
 
+ 
+
 // Call the function once to set the initial state
 handleWindowResize();
 
