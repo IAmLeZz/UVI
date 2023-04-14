@@ -1,3 +1,4 @@
+// Make the contact section appear when reached
 $(function () {
     $(window).on("scroll", function () {
         var sectionPos = $("#contact").offset().top;
@@ -8,24 +9,32 @@ $(function () {
         }
     });
 });
+// Make the logo of "about-us" appear when reached
 $(function () {
     $("#big-logo").addClass("appear");
 });
+var navButtons = document.querySelector("#buttons");
+// Handle window resizes and removes padding in the navbar buttons when using a mobile phone
 function handleWindowResize() {
-    var _a, _b, _c, _d;
     if (window.innerWidth < 800) {
-        (_a = document.querySelector("#buttons")) === null || _a === void 0 ? void 0 : _a.classList.remove("px-5");
-        (_b = document.querySelector("#buttons")) === null || _b === void 0 ? void 0 : _b.style.textAlign = "center";
+        navButtons.classList.remove("px-5");
+        navButtons.style.textAlign = "center";
     }
     else {
-        (_c = document.querySelector("#buttons")) === null || _c === void 0 ? void 0 : _c.classList.add("px-5");
-        (_d = document.querySelector("#buttons")) === null || _d === void 0 ? void 0 : _d.style.textAlign = "left";
+        navButtons.classList.add("px-5");
+        navButtons.style.textAlign = "left";
     }
 }
 // Call the function once to set the initial state
 handleWindowResize();
 // Add event listener for the window resize event
 window.addEventListener("resize", handleWindowResize);
-
-
-
+// Make button click scroll down/up to the requested section
+var scrollToAboutUs = function () {
+    var div = document.querySelector('.about-us');
+    div === null || div === void 0 ? void 0 : div.scrollIntoView({ behavior: 'smooth' });
+};
+var scrollToContact = function () {
+    var div = document.querySelector('#contact');
+    div === null || div === void 0 ? void 0 : div.scrollIntoView({ behavior: 'smooth' });
+};
