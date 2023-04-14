@@ -13,6 +13,7 @@ $(function () {
 $(function () {
     $("#big-logo").addClass("appear");
 });
+// Get the nav bar buttons
 var navButtons = document.querySelector("#buttons");
 // Handle window resizes and removes padding in the navbar buttons when using a mobile phone
 function handleWindowResize() {

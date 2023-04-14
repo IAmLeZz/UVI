@@ -15,16 +15,17 @@ $(function () {
   $("#big-logo").addClass("appear");
 });
 
-const navButtons = document.querySelector("#buttons");
+// Get the nav bar buttons
+const navButtons = document.querySelector("#buttons") as HTMLElement;
 
 // Handle window resizes and removes padding in the navbar buttons when using a mobile phone
 function handleWindowResize() {
   if (window.innerWidth < 800) {
-    (navButtons as HTMLElement).classList.remove("px-5");
-    (navButtons as HTMLElement).style.textAlign = "center";
+    navButtons.classList.remove("px-5");
+    navButtons.style.textAlign = "center";
   } else {
-    (navButtons as HTMLElement).classList.add("px-5");
-    (navButtons as HTMLElement).style.textAlign = "left";
+    navButtons.classList.add("px-5");
+    navButtons.style.textAlign = "left";
   }
 }
  
